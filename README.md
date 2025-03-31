@@ -16,3 +16,15 @@ Esta es una aplicación web desarrollada en **Flask** que permite realizar opera
 
 ## 🗃️ Estructura del Proyecto
 
+flask_app/
+├── app.py                      # Código principal de Flask
+├── templates/                  # Archivos HTML
+│   ├── index.html              # Página principal (listar productos)
+│   └── form.html               # Formulario de agregar/editar productos
+├── static/
+│   └── style.css               # Estilos CSS (tarjetas moradas y diseño limpio)
+├── requirements.txt           # Dependencias de Python
+
+---
+
+
