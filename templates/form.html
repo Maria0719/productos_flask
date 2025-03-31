@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ accion }} Producto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>{{ accion }} Producto</h1>
+    </header>
+    <div class="container">
+        <form method="POST">
+            Nombre:<br>
+            <input type="text" name="nombre" value="{{ producto.nombre if producto else '' }}"><br>
+            Descripción:<br>
+            <input type="text" name="descripcion" value="{{ producto.descripcion if producto else '' }}"><br>
+            Precio:<br>
+            <input type="text" name="precio" value="{{ producto.precio if producto else '' }}"><br>
+            <input type="submit" value="{{ accion }}">
+        </form>
+        <br>
+        <a href="{{ url_for('index') }}">⬅️ Volver</a>
+    </div>
+</body>
+</html>
